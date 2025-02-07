@@ -7,26 +7,23 @@ import { useState } from 'react'
 
 const Fixtures = () => {
   // Calculate odds based on team stats
-  const calculateOdds = (team, opponent) => {
-    // Base multiplier from followers (normalized between 0.5 and 2)
-    const followerRatio = team.followers / (opponent.followers || 1);
-    const followerMultiplier = Math.max(0.5, Math.min(2, followerRatio));
+  const calculateOdds = (team) => {
+    // Base calculation from followers (normalized between 0.5 and 2)
+    const maxFollowers = Math.max(...Object.values(teamsData.teams).map(t => t.followers || 0));
+    const followerFactor = 1.5 * (1 - (team.followers / maxFollowers)) + 0.5;
     
-    // Win/Loss ratio impact (1 if no games played)
-    const getWLRatio = (team) => {
-      return team.played > 0 
-        ? (team.wins + 1) / (team.losses + 1)
-        : 1;
-    };
-    const wlRatio = getWLRatio(team) / getWLRatio(opponent);
+    // Win/Loss ratio factor (between 0.7 and 1.3)
+    const totalGames = team.wins + team.losses;
+    const winRatio = totalGames > 0 ? team.wins / totalGames : 0.5;
+    const winFactor = 0.7 + (1 - winRatio) * 0.6;
     
-    // Create a seeded random factor using followers and W/L ratio
-    const seed = (team.followers * wlRatio) % 100;
-    const random = Math.sin(seed) * 0.3 + 1; // Random factor between 0.7 and 1.3
+    // Create a seeded random factor using follower count and W/L ratio
+    const seed = (team.followers * 100 + (winRatio * 1000)) || 1;
+    const seededRandom = Math.abs(Math.sin(seed)) * 0.4 + 0.8; // Random factor between 0.8 and 1.2
     
-    // Calculate final odds (between 0.1 and 4.0)
-    let odds = followerMultiplier * wlRatio * random;
-    odds = Math.max(0.1, Math.min(4.0, odds));
+    // Combine all factors and ensure odds are between 0.1 and 4
+    let odds = followerFactor * winFactor * seededRandom;
+    odds = Math.max(0.1, Math.min(4, odds));
     
     // Round to 2 decimal places
     return Number(odds.toFixed(2));
@@ -74,11 +71,6 @@ const Fixtures = () => {
   // Get matches for current date
   const currentMatches = fixturesData.matches.filter(match => match.date === currentDate);
 
-  // Add betting link handler
-  const handleBetClick = () => {
-    window.open('https://www.youtube.com/watch?v=GfRqQNKsRQA', '_blank');
-  };
-
   return (
     <div className="content-block min border">
       <div className="content-block__header">
@@ -116,10 +108,10 @@ const Fixtures = () => {
             const homeTeam = teamsData.teams[match.homeTeamId];
             const awayTeam = teamsData.teams[match.awayTeamId];
             const groupLetter = getTeamGroup(match.homeTeamId);
-
+            
             // Calculate odds for both teams
-            const homeOdds = calculateOdds(homeTeam, awayTeam);
-            const awayOdds = calculateOdds(awayTeam, homeTeam);
+            const homeOdds = calculateOdds(homeTeam);
+            const awayOdds = calculateOdds(awayTeam);
 
             const isHomeWinner = match.homeScore > match.awayScore;
             const isAwayWinner = match.awayScore > match.homeScore;
@@ -143,11 +135,17 @@ const Fixtures = () => {
                 {match.status !== "Completed" && (
                   <div className="fixture-betting">
                     <div className="betting-buttons">
-                      <button className="bet-button" onClick={handleBetClick}>
+                      <button 
+                        className="bet-button"
+                        onClick={() => window.open('https://www.youtube.com/watch?v=GfRqQNKsRQA', '_blank')}
+                      >
                         {homeTeam.name}
                         <span className="odds">{homeOdds}</span>
                       </button>
-                      <button className="bet-button" onClick={handleBetClick}>
+                      <button 
+                        className="bet-button"
+                        onClick={() => window.open('https://www.youtube.com/watch?v=GfRqQNKsRQA', '_blank')}
+                      >
                         {awayTeam.name}
                         <span className="odds">{awayOdds}</span>
                       </button>
