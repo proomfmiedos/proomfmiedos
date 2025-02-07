@@ -1,0 +1,8 @@
+{
+  "pots": {
+    "1": ["MON", "YSB", "REN", "DON"],
+    "2": ["MAN", "BLA", "ENU", "VIO"],
+    "3": ["NIC", "NEV", "SYB", "AKU"],
+    "4": ["AXL", "EDI", "MAT", "LNK"]
+  }
+}

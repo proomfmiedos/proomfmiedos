@@ -1,0 +1,147 @@
+.fixtures-page {
+  height: 100vh;
+  width: 100vw;
+  padding: var(--standard-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient-primary);
+  background-attachment: fixed;
+}
+
+.fixtures-container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.fixture-dates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--standard-margin);
+  width: 100%;
+  height: 100%;
+}
+
+.fixture-date-group {
+  background: var(--surface-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: var(--standard-margin);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fixture-date {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.fixture-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.fixture-match {
+  background: var(--surface-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixture-match:hover {
+  transform: translateY(-2px);
+}
+
+.fixture-group {
+  font-size: 11px;
+  color: var(--accent-blue);
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.fixture-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.fixture-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+}
+
+.fixture-team img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.fixture-team span {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixture-vs {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 16px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.fixture-team.winner span {
+  font-weight: bold;
+  color: #03A9F4;
+}
+
+.fixture-status {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .fixture-dates {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .fixture-dates {
+    grid-template-columns: 1fr;
+  }
+  
+  .fixtures-page {
+    padding: 5%;
+  }
+} 

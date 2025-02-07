@@ -1,0 +1,135 @@
+.playoff-bracket {
+  display: flex;
+  gap: 40px;
+  padding: 20px 0;
+  position: relative;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.playoff-round {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.playoff-round-title {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.playoff-matches {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  position: relative;
+}
+
+.playoff-match {
+  background: var(--surface-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.playoff-match:hover {
+  transform: translateX(4px);
+}
+
+.bracket-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: var(--surface-dark);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.bracket-team:hover {
+  background: var(--surface-light);
+}
+
+.bracket-team--empty {
+  color: #666;
+  justify-content: center;
+  padding: 12px;
+}
+
+.bracket-team-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.bracket-team-name {
+  flex: 1;
+  color: #fff;
+}
+
+.bracket-team-group {
+  color: #666;
+  font-size: 12px;
+}
+
+.playoff-match-separator {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.brackets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.losers-bracket {
+  border-top: 1px solid var(--accent-blue);
+  padding-top: 20px;
+  background: linear-gradient(180deg, rgba(3, 169, 244, 0.1), transparent);
+}
+
+.losers-bracket .playoff-round-title {
+  color: #03A9F4;
+}
+
+.oomfropa-teaser {
+  border-top: 1px solid var(--accent-blue);
+  padding-top: 20px;
+  background: linear-gradient(180deg, rgba(3, 169, 244, 0.1), transparent);
+  text-align: center;
+}
+
+.oomfropa-teaser h3 {
+  color: var(--accent-blue);
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.oomfropa-teaser p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .playoff-bracket {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .brackets-container {
+    gap: 20px;
+  }
+} 

@@ -1,0 +1,287 @@
+.content-block {
+  background: #1a1a1a; /* Dark background */
+  border-radius: 8px;
+  margin-bottom: 16px;
+  color: #fff; /* Light text */
+}
+
+.content-block.border {
+  border: 1px solid #333; /* Darker border */
+}
+
+.content-block__header {
+  padding: 16px;
+  border-bottom: 1px solid #333;
+}
+
+.content-block__header p {
+  margin: 0;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+
+.content-block__body {
+  padding: 16px;
+}
+
+/* Colors for positions */
+[style*="color: rgb(118, 179, 0)"] {
+  color: #76B300 !important;
+}
+
+[style*="color: rgb(3, 169, 244)"] {
+  color: #03A9F4 !important;
+}
+
+[style*="color: rgb(255, 82, 0)"] {
+  color: #FF5200 !important;
+}
+
+/* Result colors */
+.command-history-result_win__gnUlu {
+  background-color: #76B300;
+  color: white;
+}
+
+.command-history-result_draw__0Nk31 {
+  background-color: #FFA000;
+  color: white;
+}
+
+.command-history-result_loss__XdPer {
+  background-color: #FF5200;
+  color: white;
+}
+
+/* Table info colors */
+.table-info_text_block__Wp1h7 svg circle {
+  fill: currentColor;
+}
+
+.table-info_text_block__Wp1h7:nth-child(1) {
+  color: #76B300;
+}
+
+.table-info_text_block__Wp1h7:nth-child(2) {
+  color: #03A9F4;
+}
+
+.table-info_text_block__Wp1h7:nth-child(3) {
+  color: #FF5200;
+}
+
+/* Add the rest of the CSS classes from the original table */
+
+.table_table__LTgjZ {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.td_table_td_col__UdgoO {
+  padding: 8px;
+  text-align: left;
+  color: #fff; /* Light text */
+}
+
+.td_bold__rJ5vf {
+  font-weight: 600;
+}
+
+.td_border__bFkDF {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.table_team_block__y6rYP {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.command-history-result_list__E_jQM {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.command-history-result_block__1lUy5 {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.table-info_list__oJWri {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 16px 0 0;
+  margin: 0;
+}
+
+.table-info_text_block__Wp1h7 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table_team_block__y6rYP p {
+  margin: 0;
+  color: #fff; /* Light text */
+}
+
+/* Add hover effect for rows */
+.table-row:hover {
+  background-color: #2a2a2a;
+}
+
+/* Add opacity for secondary text */
+.td_opacity__K1bJj {
+  opacity: 0.7;
+}
+
+.group-separator {
+  height: 20px;
+  background: transparent;
+}
+
+.group-separator td {
+  border-bottom: 1px solid #333;
+}
+
+.qualified td {
+  background-color: rgba(118, 179, 0, 0.1);
+}
+
+.oomfropa td {
+  background-color: rgba(3, 169, 244, 0.1);
+}
+
+.eliminated td {
+  background-color: rgba(255, 82, 0, 0.1);
+}
+
+/* Add hover effect only for team rows */
+.table-row:not(.group-separator):hover {
+  background-color: #2a2a2a;
+}
+
+.table-block {
+  background: var(--surface-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-row {
+  transition: background-color 0.2s ease;
+}
+
+.qualified td {
+  background: linear-gradient(90deg, rgba(118, 179, 0, 0.1), transparent);
+}
+
+.oomfropa td {
+  background: linear-gradient(90deg, rgba(3, 169, 244, 0.1), transparent);
+}
+
+.eliminated td {
+  background: linear-gradient(90deg, rgba(255, 82, 0, 0.1), transparent);
+}
+
+.table-row:hover {
+  background: var(--surface-light);
+}
+
+.playoff-round-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-pots-button {
+  background: var(--surface-light);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--accent-blue);
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-pots-button:hover {
+  background: var(--surface-dark);
+}
+
+/* Pots styles */
+.pots-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 8px;
+}
+
+.pot {
+  background: var(--surface-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.pot-title {
+  color: var(--accent-blue);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.pot-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pot-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: var(--surface-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.pot-team:hover {
+  transform: translateX(4px);
+}
+
+.pot-team-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.pot-team-name {
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .pots-container {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,8 @@
+{
+  "groups": {
+    "A": ["REN", "ENU", "NEV", "LNK"],
+    "B": ["DON", "VIO", "NIC", "MAT"],
+    "C": ["MON", "MAN", "SYB", "AXL"],
+    "D": ["YSB", "BLA", "AKU", "EDI"]
+  }
+} 
