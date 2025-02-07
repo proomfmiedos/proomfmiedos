@@ -253,4 +253,63 @@
   color: #fff;
   font-weight: 500;
   font-size: 14px;
-} 
+}
+
+.fixture-betting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(3, 169, 244, 0.1);
+  border-radius: 4px;
+}
+
+.betting-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.bet-button {
+  padding: 10px 20px;
+  border: 2px solid var(--accent-blue);
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.bet-button:hover {
+  background-color: var(--accent-blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.bet-button .odds {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: var(--accent-blue);
+}
+
+.bet-button:hover .odds {
+  color: white;
+}
+
+.betting-caption {
+  font-size: 14px;
+  color: var(--accent-blue);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}

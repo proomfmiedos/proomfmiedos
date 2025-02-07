@@ -13,7 +13,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 150
     },
     "AXL": {
       "id": "AXL",
@@ -28,7 +29,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 139
     },
     "BLA": {
       "id": "BLA",
@@ -43,7 +45,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 552
     },
     "DON": {
       "id": "DON",
@@ -58,7 +61,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 984
     },
     "EDI": {
       "id": "EDI",
@@ -73,7 +77,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 137
     },
     "ENU": {
       "id": "ENU",
@@ -88,7 +93,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 418
     },
     "LNK": {
       "id": "LNK",
@@ -103,7 +109,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 20
     },
     "MAN": {
       "id": "MAN",
@@ -118,7 +125,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 942
     },
     "MAT": {
       "id": "MAT",
@@ -133,7 +141,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 112
     },
     "MON": {
       "id": "MON",
@@ -148,7 +157,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 984
     },
     "NAH": {
       "id": "NAH",
@@ -163,7 +173,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 16000
     },
     "NEV": {
       "id": "NEV",
@@ -178,7 +189,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 226
     },
     "NIC": {
       "id": "NIC",
@@ -193,7 +205,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 248
     },
     "REN": {
       "id": "REN",
@@ -208,7 +221,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 425
     },
     "SYB": {
       "id": "SYB",
@@ -223,7 +237,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 225
     },
     "VIO": {
       "id": "VIO",
@@ -238,7 +253,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 336
     },
     "YSB": {
       "id": "YSB",
@@ -253,7 +269,8 @@
       "losses": 0,
       "form": [],
       "status": "",
-      "percentage": 0
+      "percentage": 0,
+      "followers": 233
     },
     "TBD": {
       "id": "TBD",
@@ -262,7 +279,8 @@
       "points": 0,
       "played": 0,
       "form": [],
-      "percentage": 0
+      "percentage": 0,
+      "followers": 0
     }
   }
 }

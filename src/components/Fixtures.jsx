@@ -6,6 +6,32 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 const Fixtures = () => {
+  // Calculate odds based on team stats
+  const calculateOdds = (team, opponent) => {
+    // Base multiplier from followers (normalized between 0.5 and 2)
+    const followerRatio = team.followers / (opponent.followers || 1);
+    const followerMultiplier = Math.max(0.5, Math.min(2, followerRatio));
+    
+    // Win/Loss ratio impact (1 if no games played)
+    const getWLRatio = (team) => {
+      return team.played > 0 
+        ? (team.wins + 1) / (team.losses + 1)
+        : 1;
+    };
+    const wlRatio = getWLRatio(team) / getWLRatio(opponent);
+    
+    // Create a seeded random factor using followers and W/L ratio
+    const seed = (team.followers * wlRatio) % 100;
+    const random = Math.sin(seed) * 0.3 + 1; // Random factor between 0.7 and 1.3
+    
+    // Calculate final odds (between 0.1 and 4.0)
+    let odds = followerMultiplier * wlRatio * random;
+    odds = Math.max(0.1, Math.min(4.0, odds));
+    
+    // Round to 2 decimal places
+    return Number(odds.toFixed(2));
+  };
+
   // Get all unique dates from fixtures
   const allDates = [...new Set(fixturesData.matches.map(match => match.date))].sort();
   
@@ -48,6 +74,11 @@ const Fixtures = () => {
   // Get matches for current date
   const currentMatches = fixturesData.matches.filter(match => match.date === currentDate);
 
+  // Add betting link handler
+  const handleBetClick = () => {
+    window.open('https://www.youtube.com/watch?v=GfRqQNKsRQA', '_blank');
+  };
+
   return (
     <div className="content-block min border">
       <div className="content-block__header">
@@ -86,6 +117,10 @@ const Fixtures = () => {
             const awayTeam = teamsData.teams[match.awayTeamId];
             const groupLetter = getTeamGroup(match.homeTeamId);
 
+            // Calculate odds for both teams
+            const homeOdds = calculateOdds(homeTeam, awayTeam);
+            const awayOdds = calculateOdds(awayTeam, homeTeam);
+
             const isHomeWinner = match.homeScore > match.awayScore;
             const isAwayWinner = match.awayScore > match.homeScore;
             
@@ -105,6 +140,23 @@ const Fixtures = () => {
                     <span>{awayTeam.name}</span>
                   </div>
                 </div>
+                {match.status !== "Completed" && (
+                  <div className="fixture-betting">
+                    <div className="betting-buttons">
+                      <button className="bet-button" onClick={handleBetClick}>
+                        {homeTeam.name}
+                        <span className="odds">{homeOdds}</span>
+                      </button>
+                      <button className="bet-button" onClick={handleBetClick}>
+                        {awayTeam.name}
+                        <span className="odds">{awayOdds}</span>
+                      </button>
+                    </div>
+                    <div className="betting-caption">
+                      APUESTA EN OOMFXBET
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}

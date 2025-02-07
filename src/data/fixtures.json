@@ -5,168 +5,264 @@
       "status": "Scheduled",
       "homeTeamId": "REN",
       "awayTeamId": "LNK",
-      "id": "grpA_r1_1"
+      "id": "grpA_r1_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "ENU",
       "awayTeamId": "NEV",
-      "id": "grpA_r1_2"
+      "id": "grpA_r1_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "REN",
       "awayTeamId": "NEV",
-      "id": "grpA_r2_1"
+      "id": "grpA_r2_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "LNK",
       "awayTeamId": "ENU",
-      "id": "grpA_r2_2"
+      "id": "grpA_r2_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "REN",
       "awayTeamId": "ENU",
-      "id": "grpA_r3_1"
+      "id": "grpA_r3_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "NEV",
       "awayTeamId": "LNK",
-      "id": "grpA_r3_2"
+      "id": "grpA_r3_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "DON",
       "awayTeamId": "MAT",
-      "id": "grpB_r1_1"
+      "id": "grpB_r1_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "VIO",
       "awayTeamId": "NIC",
-      "id": "grpB_r1_2"
+      "id": "grpB_r1_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "DON",
       "awayTeamId": "NIC",
-      "id": "grpB_r2_1"
+      "id": "grpB_r2_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "MAT",
       "awayTeamId": "VIO",
-      "id": "grpB_r2_2"
+      "id": "grpB_r2_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "DON",
       "awayTeamId": "VIO",
-      "id": "grpB_r3_1"
+      "id": "grpB_r3_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "NIC",
       "awayTeamId": "MAT",
-      "id": "grpB_r3_2"
+      "id": "grpB_r3_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "MON",
       "awayTeamId": "AXL",
-      "id": "grpC_r1_1"
+      "id": "grpC_r1_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "MAN",
       "awayTeamId": "SYB",
-      "id": "grpC_r1_2"
+      "id": "grpC_r1_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "MON",
       "awayTeamId": "SYB",
-      "id": "grpC_r2_1"
+      "id": "grpC_r2_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "AXL",
       "awayTeamId": "MAN",
-      "id": "grpC_r2_2"
+      "id": "grpC_r2_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "MON",
       "awayTeamId": "MAN",
-      "id": "grpC_r3_1"
+      "id": "grpC_r3_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "SYB",
       "awayTeamId": "AXL",
-      "id": "grpC_r3_2"
+      "id": "grpC_r3_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "YSB",
       "awayTeamId": "EDI",
-      "id": "grpD_r1_1"
+      "id": "grpD_r1_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "08/02",
       "status": "Scheduled",
       "homeTeamId": "BLA",
       "awayTeamId": "AKU",
-      "id": "grpD_r1_2"
+      "id": "grpD_r1_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "YSB",
       "awayTeamId": "AKU",
-      "id": "grpD_r2_1"
+      "id": "grpD_r2_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "09/02",
       "status": "Scheduled",
       "homeTeamId": "EDI",
       "awayTeamId": "BLA",
-      "id": "grpD_r2_2"
+      "id": "grpD_r2_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "YSB",
       "awayTeamId": "BLA",
-      "id": "grpD_r3_1"
+      "id": "grpD_r3_1",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "AKU",
       "awayTeamId": "EDI",
-      "id": "grpD_r3_2"
+      "id": "grpD_r3_2",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "12/02",
@@ -174,7 +270,11 @@
       "homeTeamId": "TBD",
       "awayTeamId": "TBD",
       "id": "sf1",
-      "description": "Ganador 1A/2B vs Ganador 1B/2A"
+      "description": "Ganador 1A/2B vs Ganador 1B/2A",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "12/02",
@@ -182,7 +282,11 @@
       "homeTeamId": "TBD",
       "awayTeamId": "TBD",
       "id": "sf2",
-      "description": "Ganador 1C/2D vs Ganador 1D/2C"
+      "description": "Ganador 1C/2D vs Ganador 1D/2C",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "14/02",
@@ -190,7 +294,11 @@
       "homeTeamId": "TBD",
       "awayTeamId": "TBD",
       "id": "final",
-      "description": "Final"
+      "description": "Final",
+      "odds": {
+        "homeOdds": 2.5,
+        "awayOdds": 1.8
+      }
     }
-  ]
+  ] 
 }
