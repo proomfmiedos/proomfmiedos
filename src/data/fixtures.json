@@ -42,7 +42,6 @@
       "awayTeamId": "LNK",
       "id": "grpA_r3_2"
     },
-
     {
       "date": "08/02",
       "status": "Scheduled",
@@ -52,12 +51,10 @@
     },
     {
       "date": "08/02",
-      "status": "Completed",
+      "status": "Scheduled",
       "homeTeamId": "VIO",
       "awayTeamId": "NIC",
-      "id": "grpB_r1_2",
-      "homeScore": 75,
-      "awayScore": 25
+      "id": "grpB_r1_2"
     },
     {
       "date": "09/02",
@@ -87,15 +84,12 @@
       "awayTeamId": "MAT",
       "id": "grpB_r3_2"
     },
-
     {
       "date": "08/02",
-      "status": "Completed",
+      "status": "Scheduled",
       "homeTeamId": "MON",
       "awayTeamId": "AXL",
-      "id": "grpC_r1_1",
-      "homeScore": 52,
-      "awayScore": 48
+      "id": "grpC_r1_1"
     },
     {
       "date": "08/02",
@@ -132,7 +126,6 @@
       "awayTeamId": "AXL",
       "id": "grpC_r3_2"
     },
-
     {
       "date": "08/02",
       "status": "Scheduled",

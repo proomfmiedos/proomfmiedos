@@ -1,0 +1,13 @@
+/* Ensure Inter Regular is used by default */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Regular weight */
+}
+
+/* Optional: Use a media query to specifically target mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400; /* Ensure regular weight on mobile */
+    }
+} 
