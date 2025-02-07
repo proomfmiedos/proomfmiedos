@@ -36,15 +36,15 @@ const PlayoffBracket = () => {
   const qualifiedTeams = getQualifiedTeams();
 
   const quarterFinals = [
-    { home: qualifiedTeams.A?.first, away: qualifiedTeams.B?.second },
-    { home: qualifiedTeams.B?.first, away: qualifiedTeams.A?.second },
-    { home: qualifiedTeams.C?.first, away: qualifiedTeams.D?.second },
-    { home: qualifiedTeams.D?.first, away: qualifiedTeams.C?.second }
+    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
+    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
+    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
+    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] }
   ];
 
   const loserBracket = [
-    { home: qualifiedTeams.A?.third, away: qualifiedTeams.C?.third },
-    { home: qualifiedTeams.B?.third, away: qualifiedTeams.D?.third }
+    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
+    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] }
   ];
 
   const renderTeam = (team) => {
@@ -54,7 +54,6 @@ const PlayoffBracket = () => {
       <div className="bracket-team">
         <img src={team.image} alt={team.name} className="bracket-team-image" />
         <span className="bracket-team-name">{team.name}</span>
-        <span className="bracket-team-group">({team.groupLetter}1)</span>
       </div>
     );
   };
