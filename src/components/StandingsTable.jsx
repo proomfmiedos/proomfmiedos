@@ -39,13 +39,6 @@ const StandingsTable = () => {
     }
   }
 
-  // Calculate percentage of possible points
-  const calculatePercentage = (team) => {
-    const maxPossiblePoints = team.played * 3;
-    if (maxPossiblePoints === 0) return 0;
-    return Math.round((team.points / maxPossiblePoints) * 100);
-  };
-
   // Function to sort teams within a group
   const sortTeams = (teams) => {
     return teams.sort((a, b) => {
@@ -149,7 +142,7 @@ const StandingsTable = () => {
                           </td>
                           <td className="td_table_td_col__UdgoO td_bold__rJ5vf td_border__bFkDF td_w24__tbjk6">{team.points}</td>
                           <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">{team.played}</td>
-                          <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">{calculatePercentage(team)}%</td>
+                          <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">{team.percentage}%</td>
                           <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">
                             <ul className="command-history-result_list__E_jQM command-history-result_min__b0St0">
                               {team.form.map((result, index) => (
