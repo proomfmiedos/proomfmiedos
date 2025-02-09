@@ -19,7 +19,7 @@
       "id": "grpA_r1_2"
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "REN",
       "awayTeamId": "NEV",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "LNK",
       "awayTeamId": "ENU",
@@ -41,7 +41,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "REN",
       "awayTeamId": "ENU",
@@ -52,7 +52,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "NEV",
       "awayTeamId": "LNK",
@@ -81,7 +81,7 @@
       "id": "grpB_r1_2"
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "DON",
       "awayTeamId": "NIC",
@@ -92,7 +92,7 @@
       }
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "MAT",
       "awayTeamId": "VIO",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "DON",
       "awayTeamId": "VIO",
@@ -114,7 +114,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "NIC",
       "awayTeamId": "MAT",
@@ -143,7 +143,7 @@
       "id": "grpC_r1_2"
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "MON",
       "awayTeamId": "SYB",
@@ -154,7 +154,7 @@
       }
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "AXL",
       "awayTeamId": "MAN",
@@ -165,7 +165,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "MON",
       "awayTeamId": "MAN",
@@ -176,7 +176,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "SYB",
       "awayTeamId": "AXL",
@@ -205,7 +205,7 @@
       "id": "grpD_r1_2"
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "YSB",
       "awayTeamId": "AKU",
@@ -216,7 +216,7 @@
       }
     },
     {
-      "date": "09/02",
+      "date": "10/02",
       "status": "Scheduled",
       "homeTeamId": "EDI",
       "awayTeamId": "BLA",
@@ -227,7 +227,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "YSB",
       "awayTeamId": "BLA",
@@ -238,7 +238,7 @@
       }
     },
     {
-      "date": "10/02",
+      "date": "11/02",
       "status": "Scheduled",
       "homeTeamId": "AKU",
       "awayTeamId": "EDI",
