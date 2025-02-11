@@ -75,11 +75,29 @@ const StandingsTable = () => {
     return completedMatchesCount > 0 ? Math.floor(totalScore / completedMatchesCount) : 0;
   };
 
+  // Function to calculate points for a team
+  const calculatePoints = (teamId) => {
+    const matches = fixturesData.matches.filter(match => 
+      match.status === 'Completed' && 
+      (match.homeTeamId === teamId || match.awayTeamId === teamId)
+    );
+
+    return matches.reduce((points, match) => {
+      if (match.homeTeamId === teamId && match.homeScore > match.awayScore) {
+        return points + 3; // Home win
+      } else if (match.awayTeamId === teamId && match.awayScore > match.homeScore) {
+        return points + 3; // Away win
+      }
+      return points; // No points for a draw or loss
+    }, 0);
+  };
+
   // Process groups and sort teams within each group
   const processedGroups = Object.entries(groupsData.groups).map(([groupLetter, teamIds]) => {
     const groupTeams = teamIds.map(id => ({
       ...teamsData.teams[id],
       groupLetter,
+      points: calculatePoints(id), // Calculate points dynamically
       averageScore: calculateAverageScore(id)
     }));
     return sortTeams(groupTeams);
