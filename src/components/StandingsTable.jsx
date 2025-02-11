@@ -2,6 +2,7 @@ import './StandingsTable.css'
 import teamsData from '../data/teams.json'
 import groupsData from '../data/groups.json'
 import potsData from '../data/pots.json'
+import fixturesData from '../data/fixtures.json'
 import { useState } from 'react'
 
 const StandingsTable = () => {
@@ -53,11 +54,33 @@ const StandingsTable = () => {
     });
   };
 
+  // Function to calculate the average score for a team
+  const calculateAverageScore = (teamId) => {
+    const matches = fixturesData.matches.filter(match => 
+      match.homeTeamId === teamId || match.awayTeamId === teamId
+    );
+
+    const totalScore = matches.reduce((acc, match) => {
+      if (match.status === 'Completed') {
+        if (match.homeTeamId === teamId) {
+          return acc + match.homeScore;
+        } else if (match.awayTeamId === teamId) {
+          return acc + match.awayScore;
+        }
+      }
+      return acc;
+    }, 0);
+
+    const completedMatchesCount = matches.filter(match => match.status === 'Completed').length;
+    return completedMatchesCount > 0 ? Math.floor(totalScore / completedMatchesCount) : 0;
+  };
+
   // Process groups and sort teams within each group
   const processedGroups = Object.entries(groupsData.groups).map(([groupLetter, teamIds]) => {
     const groupTeams = teamIds.map(id => ({
       ...teamsData.teams[id],
-      groupLetter
+      groupLetter,
+      averageScore: calculateAverageScore(id)
     }));
     return sortTeams(groupTeams);
   });
@@ -142,7 +165,7 @@ const StandingsTable = () => {
                           </td>
                           <td className="td_table_td_col__UdgoO td_bold__rJ5vf td_border__bFkDF td_w24__tbjk6">{team.points}</td>
                           <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">{team.played}</td>
-                          <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">{team.percentage}%</td>
+                          <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">{team.averageScore}%</td>
                           <td className="td_table_td_col__UdgoO td_fitContent__R4qJY">
                             <ul className="command-history-result_list__E_jQM command-history-result_min__b0St0">
                               {team.form.map((result, index) => (
