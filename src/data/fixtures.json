@@ -38,25 +38,21 @@
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "REN",
       "awayTeamId": "ENU",
-      "id": "grpA_r3_1",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 33,
+      "awayScore": 66,
+      "id": "grpA_r3_1"
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "NEV",
       "awayTeamId": "LNK",
-      "id": "grpA_r3_2",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 72,
+      "awayScore": 27,
+      "id": "grpA_r3_2"
     },
     {
       "date": "08/02",
@@ -96,25 +92,21 @@
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "DON",
       "awayTeamId": "VIO",
-      "id": "grpB_r3_1",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 51,
+      "awayScore": 48,
+      "id": "grpB_r3_1"
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "NIC",
       "awayTeamId": "MAT",
-      "id": "grpB_r3_2",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 55,
+      "awayScore": 44,
+      "id": "grpB_r3_2"
     },
     {
       "date": "08/02",
@@ -154,25 +146,21 @@
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "MON",
       "awayTeamId": "MAN",
-      "id": "grpC_r3_1",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 30,
+      "awayScore": 69,
+      "id": "grpC_r3_1"
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "SYB",
       "awayTeamId": "AXL",
-      "id": "grpC_r3_2",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 54,
+      "awayScore": 45,
+      "id": "grpC_r3_2"
     },
     {
       "date": "08/02",
@@ -212,25 +200,21 @@
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "YSB",
       "awayTeamId": "BLA",
-      "id": "grpD_r3_1",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 69,
+      "awayScore": 30,
+      "id": "grpD_r3_1"
     },
     {
       "date": "12/02",
-      "status": "Scheduled",
+      "status": "Completed",
       "homeTeamId": "AKU",
       "awayTeamId": "EDI",
-      "id": "grpD_r3_2",
-      "odds": {
-        "homeOdds": 2.5,
-        "awayOdds": 1.8
-      }
+      "homeScore": 64,
+      "awayScore": 35,
+      "id": "grpD_r3_2"
     },
     {
       "date": "13/02",
