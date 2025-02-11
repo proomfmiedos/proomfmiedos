@@ -43,13 +43,14 @@ const StandingsTable = () => {
   // Function to sort teams within a group
   const sortTeams = (teams) => {
     return teams.sort((a, b) => {
-      // First, sort by points
-      if (a.points !== b.points) {
-        return b.points - a.points;
-      }
+      // First sort by points
+      if (b.points !== a.points) return b.points - a.points;
       
-      // Then, sort by average score (assuming it's stored in a property called 'averageScore')
-      return b.averageScore - a.averageScore;
+      // If points are tied, sort by percentage
+      if (b.percentage !== a.percentage) return b.percentage - a.percentage;
+      
+      // If percentage is tied, sort alphabetically
+      return a.name.localeCompare(b.name);
     });
   };
 
