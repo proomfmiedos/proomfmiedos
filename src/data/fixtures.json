@@ -19,7 +19,7 @@
       "id": "grpA_r1_2"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "REN",
       "awayTeamId": "NEV",
@@ -28,7 +28,7 @@
       "id": "grpA_r2_1"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "LNK",
       "awayTeamId": "ENU",
@@ -37,7 +37,7 @@
       "id": "grpA_r2_2"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "REN",
       "awayTeamId": "ENU",
@@ -46,7 +46,7 @@
       "id": "grpA_r3_1"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "NEV",
       "awayTeamId": "LNK",
@@ -73,7 +73,7 @@
       "id": "grpB_r1_2"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "DON",
       "awayTeamId": "NIC",
@@ -82,7 +82,7 @@
       "id": "grpB_r2_1"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "MAT",
       "awayTeamId": "VIO",
@@ -91,7 +91,7 @@
       "id": "grpB_r2_2"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "DON",
       "awayTeamId": "VIO",
@@ -100,7 +100,7 @@
       "id": "grpB_r3_1"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "NIC",
       "awayTeamId": "MAT",
@@ -127,7 +127,7 @@
       "id": "grpC_r1_2"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "MON",
       "awayTeamId": "SYB",
@@ -136,7 +136,7 @@
       "id": "grpC_r2_1"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "AXL",
       "awayTeamId": "MAN",
@@ -145,7 +145,7 @@
       "id": "grpC_r2_2"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "MON",
       "awayTeamId": "MAN",
@@ -154,7 +154,7 @@
       "id": "grpC_r3_1"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "SYB",
       "awayTeamId": "AXL",
@@ -181,7 +181,7 @@
       "id": "grpD_r1_2"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "YSB",
       "awayTeamId": "AKU",
@@ -190,7 +190,7 @@
       "id": "grpD_r2_1"
     },
     {
-      "date": "11/02",
+      "date": "10/02",
       "status": "Completed",
       "homeTeamId": "EDI",
       "awayTeamId": "BLA",
@@ -199,7 +199,7 @@
       "id": "grpD_r2_2"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "YSB",
       "awayTeamId": "BLA",
@@ -208,13 +208,61 @@
       "id": "grpD_r3_1"
     },
     {
-      "date": "12/02",
+      "date": "11/02",
       "status": "Completed",
       "homeTeamId": "AKU",
       "awayTeamId": "EDI",
       "homeScore": 64,
       "awayScore": 35,
       "id": "grpD_r3_2"
+    },
+    {
+      "date": "12/02",
+      "status": "Scheduled",
+      "homeTeamId": "DON",
+      "awayTeamId": "AKU",
+      "id": "qf1",
+      "description": "1B vs 2D",
+      "odds": {
+        "homeOdds": 1.6,
+        "awayOdds": 2.4
+      }
+    },
+    {
+      "date": "12/02",
+      "status": "Scheduled",
+      "homeTeamId": "MAN",
+      "awayTeamId": "VIO",
+      "id": "qf2", 
+      "description": "1C vs 2B",
+      "odds": {
+        "homeOdds": 1.9,
+        "awayOdds": 1.9
+      }
+    },
+    {
+      "date": "12/02",
+      "status": "Scheduled",
+      "homeTeamId": "YSB",
+      "awayTeamId": "NEV",
+      "id": "qf3",
+      "description": "1D vs 2A",
+      "odds": {
+        "homeOdds": 1.7,
+        "awayOdds": 2.2
+      }
+    },
+    {
+      "date": "12/02",
+      "status": "Scheduled", 
+      "homeTeamId": "ENU",
+      "awayTeamId": "MON",
+      "id": "qf4",
+      "description": "1A vs 2C",
+      "odds": {
+        "homeOdds": 2.1,
+        "awayOdds": 1.8
+      }
     },
     {
       "date": "13/02",

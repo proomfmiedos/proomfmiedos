@@ -36,10 +36,10 @@ const PlayoffBracket = () => {
   const qualifiedTeams = getQualifiedTeams();
 
   const quarterFinals = [
-    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
-    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
-    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] },
-    { home: teamsData.teams["TBD"], away: teamsData.teams["TBD"] }
+    { home: teamsData.teams["DON"], away: teamsData.teams["AKU"] },
+    { home: teamsData.teams["MAN"], away: teamsData.teams["VIO"] },
+    { home: teamsData.teams["YSB"], away: teamsData.teams["NEV"] },
+    { home: teamsData.teams["ENU"], away: teamsData.teams["MON"] }
   ];
 
   const loserBracket = [
