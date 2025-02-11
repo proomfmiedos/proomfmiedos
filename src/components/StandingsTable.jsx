@@ -43,13 +43,13 @@ const StandingsTable = () => {
   // Function to sort teams within a group
   const sortTeams = (teams) => {
     return teams.sort((a, b) => {
-      // First sort by points
+      // First sort by dynamically calculated points
       if (b.points !== a.points) return b.points - a.points;
       
-      // If points are tied, sort by percentage
-      if (b.percentage !== a.percentage) return b.percentage - a.percentage;
+      // If points are tied, sort by dynamically calculated average score
+      if (b.averageScore !== a.averageScore) return b.averageScore - a.averageScore;
       
-      // If percentage is tied, sort alphabetically
+      // If average score is tied, sort alphabetically
       return a.name.localeCompare(b.name);
     });
   };
@@ -92,13 +92,33 @@ const StandingsTable = () => {
     }, 0);
   };
 
+  // Function to calculate the form for a team
+  const calculateForm = (teamId) => {
+    const matches = fixturesData.matches.filter(match => 
+      match.status === 'Completed' && 
+      (match.homeTeamId === teamId || match.awayTeamId === teamId)
+    );
+
+    return matches.map(match => {
+      if (match.homeTeamId === teamId) {
+        if (match.homeScore > match.awayScore) return 'W'; // Home win
+        if (match.homeScore < match.awayScore) return 'L'; // Home loss
+      } else if (match.awayTeamId === teamId) {
+        if (match.awayScore > match.homeScore) return 'W'; // Away win
+        if (match.awayScore < match.homeScore) return 'L'; // Away loss
+      }
+      return 'D'; // Draw
+    });
+  };
+
   // Process groups and sort teams within each group
   const processedGroups = Object.entries(groupsData.groups).map(([groupLetter, teamIds]) => {
     const groupTeams = teamIds.map(id => ({
       ...teamsData.teams[id],
       groupLetter,
       points: calculatePoints(id), // Calculate points dynamically
-      averageScore: calculateAverageScore(id)
+      averageScore: calculateAverageScore(id),
+      form: calculateForm(id) // Calculate form dynamically
     }));
     return sortTeams(groupTeams);
   });
